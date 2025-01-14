@@ -132,7 +132,7 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: |
           mvn sonar:sonar \
-          -Dsonar.projectKey=$SONAR_PROJECT_KEY \
+          -Dsonar.projectKey=amasovic_cicd_a2dfe93e-585b-4553-9c94-86c3024bce80 \
           -Dsonar.host.url=$SONAR_HOST_URL \
           -Dsonar.login=$SONAR_TOKEN
 
