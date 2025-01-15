@@ -166,7 +166,7 @@ jobs:
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         run: |
-          ./snyk test -d --all-projects
+          ./snyk test --all-projects
 
   build-docker:
     if: github.ref == 'refs/heads/main'
